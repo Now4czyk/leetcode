@@ -11,7 +11,7 @@ const twoSum = (nums: number[], target: number): number[] => {
   return [-1, -1];
 };
 
-describe("1 - Two Sum", () => {
+describe("1. Two Sum", () => {
   it("Test 1", () => {
     const nums = [2, 7, 11, 15];
     const target = 9;
