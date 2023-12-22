@@ -22,7 +22,7 @@ describe("217. Contains duplicate", () => {
 
     expect(isDuplicate).toEqual(false);
   });
-  it("Test 2", () => {
+  it("Test 3", () => {
     const nums = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
     const isDuplicate = containsDuplicate(nums);
 
