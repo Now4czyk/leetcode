@@ -31,13 +31,11 @@ class MyQueue {
   }
 
   peek(): number {
-    const length = this.last.length;
-
-    for (let i = 0; i < length; i++) {
-      this.first.push(this.last.pop()!);
+    if (this.first.length > 0) {
+      return this.first[this.first.length - 1];
     }
 
-    return this.first[this.first.length - 1];
+    return this.last[0];
   }
 
   empty(): boolean {
