@@ -13,27 +13,14 @@ const twoSum = (nums: number[], target: number): number[] => {
 
 describe("1. Two Sum", () => {
   it("Test 1", () => {
-    const nums = [2, 7, 11, 15];
-    const target = 9;
-    const result = twoSum(nums, target);
-
-    expect(result).toEqual([0, 1]);
+    expect(twoSum([2, 7, 11, 15], 9)).toEqual([0, 1]);
   });
 
   it("Test 2", () => {
-    const nums = [3, 2, 4];
-    const target = 6;
-    const result = twoSum(nums, target);
-
-    expect(result).toEqual([1, 2]);
+    expect(twoSum([3, 2, 4], 6)).toEqual([1, 2]);
   });
 
   it("Test 3", () => {
-    const nums = [3, 3];
-    const target = 6;
-    const result = twoSum(nums, target);
-
-    console.log(result);
-    expect(result).toEqual([0, 1]);
+    expect(twoSum([3, 3], 6)).toEqual([0, 1]);
   });
 });
