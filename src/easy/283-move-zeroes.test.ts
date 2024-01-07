@@ -1,6 +1,3 @@
-/**
- Do not return anything, modify nums in-place instead.
- */
 const moveZeroes = (nums: number[]): void => {
   let writes = 0;
   for (let i = 0; i < nums.length; i++) {
