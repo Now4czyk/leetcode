@@ -8,7 +8,7 @@ const maxProfit = (prices: number[]): number => {
   return maxProfit;
 };
 
-describe("121. Climb Stairs", () => {
+describe("121. Best Time To Buy And Sell Stock", () => {
   it("Test 1", () => {
     expect(maxProfit([7, 1, 5, 3, 6, 4])).toEqual(5);
   });
