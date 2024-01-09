@@ -15,8 +15,8 @@ export class TreeNode {
 export module TreeNode {
   export const empty = new TreeNode();
 
-  export const array = (root: TreeNode): (number | null)[] => {
-    const result: (number | null)[] = [];
+  export const array = (root: TreeNode): Nullable<number>[] => {
+    const result: Nullable<number>[] = [];
     const queue: TreeNode[] = [root];
 
     while (queue.length > 0) {
