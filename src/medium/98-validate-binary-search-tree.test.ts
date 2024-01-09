@@ -1,6 +1,7 @@
 import { TreeNode } from "../shared/structures/TreeNode.js";
+import { Nullable } from "../shared/utilities/nullable.js";
 
-function isValidBST(root: TreeNode | null): boolean {
+function isValidBST(root: Nullable<TreeNode>): boolean {
   if (!root) return false;
 
   const queue: { node: TreeNode; min?: number; max?: number }[] = [{ node: root! }];

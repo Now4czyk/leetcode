@@ -1,6 +1,7 @@
 import { TreeNode } from "../shared/structures/TreeNode.js";
+import { Nullable } from "../shared/utilities/nullable.js";
 
-const maxDepth = (root: TreeNode | null): number =>
+const maxDepth = (root: Nullable<TreeNode>): number =>
   root ? Math.max(maxDepth(root.left), maxDepth(root.right)) + 1 : 0;
 
 describe("104. Maximum Depth of Binary Tree", () => {
