@@ -1,6 +1,7 @@
 import { ListNode } from "../shared/structures/ListNode.js";
+import { Nullable } from "../shared/utilities/nullable.js";
 
-function reverseList(head: ListNode | null): ListNode | null {
+const reverseList = (head: Nullable<ListNode>): Nullable<ListNode> => {
   let prev = null;
 
   while (head) {
@@ -11,7 +12,7 @@ function reverseList(head: ListNode | null): ListNode | null {
   }
 
   return prev;
-}
+};
 
 describe("206. Reverse Linked List", () => {
   it("Test 1", () => {

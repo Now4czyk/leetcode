@@ -1,10 +1,10 @@
-function titleToNumber(columnTitle: string): number {
+const titleToNumber = (columnTitle: string): number => {
   let num = 0;
   for (let i = 0; i < columnTitle.length; i++) {
     num = num * 26 + (columnTitle[i].charCodeAt(0) - 64);
   }
   return num;
-}
+};
 
 describe("171. Excel Sheet Column Number", () => {
   it("Test 1", () => {
