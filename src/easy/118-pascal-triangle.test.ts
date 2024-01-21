@@ -1,17 +1,16 @@
 const generate = (numRows: number): number[][] => {
-  if (numRows === 1) return [[1]];
-  const arr = [[1], [1, 1]];
-  for (let i = 1; i < numRows - 1; i++) {
-    const curr = [];
-    const prev = arr[i];
-    for (let j = 0; j < prev.length + 1; j++) {
-      if (j == 0) curr.push(prev[j]);
-      else if (j == prev.length) curr.push(prev[j - 1]);
-      else curr.push(prev[j - 1] + prev[j]);
+  const result = new Array(numRows);
+
+  for (let i = 0; i < numRows; i++) {
+    result[i] = new Array(i + 1);
+    result[i][0] = 1;
+    result[i][i] = 1;
+    for (let j = 1; j < i; j++) {
+      result[i][j] = result[i - 1][j - 1] + result[i - 1][j];
     }
-    arr.push(curr);
   }
-  return arr;
+
+  return result;
 };
 
 describe("118. Pascal's Triangle", () => {
