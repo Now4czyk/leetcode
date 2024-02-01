@@ -12,7 +12,7 @@ const hasCycle = (head: Nullable<ListNode>): boolean => {
   return result;
 };
 
-describe("141 - linked list cycle", () => {
+describe("141. Linked List Cycle", () => {
   it("Test 1", () => {
     const head = new ListNode(1);
     head.next = new ListNode(2);
